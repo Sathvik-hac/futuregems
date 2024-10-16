@@ -1,0 +1,177 @@
+body{
+    background-color: #f2f2f2;
+    color: #000000;
+}
+
+  body.dark-mode {
+    background-color: #060606;
+    color: #fff;
+  }
+  h1{
+    text-align: center;
+    font-family:Anton;
+   
+  }
+
+/* From Uiverse.io by LeonKohli */ 
+.toggle {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1;
+  float: right;
+position: relative;
+top: -10px;
+left: -10px;
+}
+
+.input {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+}
+
+.icon--sun {
+  transform: scale(0);
+}
+
+#dark-mode-toggle:checked + .icon--moon {
+  transform: rotate(360deg) scale(0);
+}
+
+#dark-mode-toggle:checked ~ .icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
+
+.w-8 {
+  width: 2rem /* 32px */;
+}
+.navi{
+  float: right;
+  color: #000000;
+
+}
+ /* From Uiverse.io by elijahgummer */ 
+.home{
+  text-decoration: none;
+  font-family: Anton;
+  background-color: #f0f0f0;
+  border: 2px;
+  color: #242424;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+  text-shadow: 0 0.0625em 0 #fff;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+.home:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+.back{
+  background-position: center;
+  background-color: transparent;
+  min-height: 650px;
+  min-width: 500px;
+  background-image: url("https://i.ibb.co/NYRBswJ/snapedit-1728913603976.png");
+  display: block;
+  font-family: Anton;
+}
+.about{
+  text-decoration: none;
+  font-family: Anton;
+  background-color: #f0f0f0;
+  border: 2px;
+  color: #242424;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+  text-shadow: 0 0.0625em 0 #fff;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+.about:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+.contact{
+  text-decoration: none;
+  font-family: Anton;
+  background-color: #f0f0f0;
+  border: 2px;
+  color: #242424;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+  text-shadow: 0 0.0625em 0 #fff;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+.contact:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+h1.fg {
+  font-size: 200px;
+  position: relative;
+  text-align: center;
+  left: 55px;
+  top: 450px;
+  color: #00000000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0 0 0);
+}
+.fgboll {
+  border: #000000 solid;
+  background-color: black;
+  position: absolute;
+  border-radius: 50px;
+  min-width: 25px;
+  min-height: 25px;
+  left: 390px;
+  bottom: 61px;
+  animation: roll 3s infinite; 
+}
+@keyframes roll{
+  0% {
+    left: 190px;
+    transform: translateX(190px);
+}
+100%{
+  left: 205px;
+  transform: translateX(270px);
+}
+} 
